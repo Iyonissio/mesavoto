@@ -12,14 +12,10 @@ django-shopping-cart==0.1
 itsdangerous==2.0.1
 Jinja2==3.0.3
 MarkupSafe==2.0.1
-mysql-connector-python==8.0.29
-mysqlclient==2.1.0
-Pillow==7.2.0
 protobuf==4.21.1
 pycodestyle==2.8.0
 pycparser==2.21
 pytz==2020.1
-sqlparse==0.3.1
 toml==0.10.2
 tzdata==2021.5
 Werkzeug==2.0.2

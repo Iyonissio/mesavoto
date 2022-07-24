@@ -1,5 +1,4 @@
 from django.shortcuts import redirect, render
-import sqlite3 as db
 from votes.models import Eleitor
 
 
