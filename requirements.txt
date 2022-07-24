@@ -19,4 +19,4 @@ pytz==2020.1
 toml==0.10.2
 tzdata==2021.5
 Werkzeug==2.0.2
-python==3.8
+python==3.8.0
