@@ -1,4 +1,7 @@
 from pathlib import Path
+import django_heroku
+import dj_database_url
+import decouple
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,7 +16,7 @@ SECRET_KEY = 'krgn%_d*e9=xzf4u3t-=1$foxcpxms@ay3t*!0qo99_+@)t)79'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://restauranteispu.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
@@ -107,3 +110,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+django_heroku.settings(locals())

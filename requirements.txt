@@ -2,6 +2,7 @@ asgiref==3.2.10
 autopep8==1.6.0
 backports.zoneinfo==0.2.1
 cffi==1.15.0
+importlib-metadata==1.6.1
 click==8.0.3
 colorama==0.4.4
 cryptography==36.0.1
@@ -19,3 +20,9 @@ pytz==2020.1
 toml==0.10.2
 tzdata==2021.5
 Werkzeug==2.0.2
+beautifulsoup4==4.9.1
+dj-database-url==0.5.0
+django-heroku==0.3.1
+whitenoise==5.1.0
+reportlab==3.5.55
+six==1.15.0
