@@ -65,12 +65,23 @@ WSGI_APPLICATION = 'votacao.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER': 'mzodqjvb_tsemba',
+        'PASSWORD': 'p]X%_o161RHC',
+        'HOST': '127.0.0.1',
+        'NAME': 'mzodqjvb_mesas',
+        'PORT': '3306',  # My new port 3380
+        'FIXTURE_DIRS': ['/fixtures'],
+        'OPTIONS': {
+            'init_command': 'SET default_storage_engine=INNODB',
+        }
     }
 }
+
 
 
 # Password validation
